@@ -1,0 +1,46 @@
+Compilation réelle : javac -parameters -encoding UTF-8 (34 fichiers Java)
+Picked up JAVA_TOOL_OPTIONS: -Xmx256m -XX:MaxMetaspaceSize=160m -Duser.timezone=UTC
+
+$ java ma.projet.App 
+Picked up JAVA_TOOL_OPTIONS: -Xmx256m -XX:MaxMetaspaceSize=160m -Duser.timezone=UTC
+Oct 15, 2026 1:03:20 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+BASE REELLE : MySQL 8.0.46
+EVALUATION — EXERCICE 1 : GESTION DE STOCK
+Produits par categorie : [ES12 120.0 DH, ZR85 100.0 DH, EE85 200.0 DH]
+Commandes entre 01/03/2013 et 31/03/2013 : [ES12 120.0 DH, ZR85 100.0 DH, EE85 200.0 DH]
+Commande : 1 Date : 2013-03-14
+Reference   Prix        Quantite
+ES12         120.00 DH  7
+ZR85         100.00 DH  14
+EE85         200.00 DH  5
+Requete nommee prix >100 DH : [ES12 120.0 DH, EE85 200.0 DH]
+Montant commande : 3240.0 DH
+EVALUATION — EXERCICE 2 : GESTION DE PROJETS
+Projet : 1 Nom : Gestion de stock Date debut : 2013-01-14
+Taches planifiees : [Analyse, Conception, Developpement, Recette]
+Num Nom               Date debut reelle   Date fin reelle
+1   Analyse            2013-02-10          2013-02-20
+2   Conception         2013-03-10          2013-03-15
+3   Developpement      2013-04-10          2013-04-25
+Taches realisees employe : [Analyse, Conception, Developpement]
+Projets geres employe : [Gestion de stock]
+Requete nommee taches >1000 DH : [Analyse, Developpement]
+Taches realisees fevrier-mars : [Analyse, Conception]
+Cout planifie : 5500.0 DH ; cout realise : 4700.0 DH ; jours passes : 30
+EVALUATION — EXERCICE 3 : ETAT CIVIL
+Population : 10 femmes, 5 hommes
+Liste des femmes : [ALAMI Karima (1960-01-01), RAMI Salima (1961-01-01), ALI Amal (1962-01-01), ALAOUI Wafa (1963-01-01), HAMDI Hana (1964-01-01), BENALI Nora (1965-01-01), IDRISSI Asma (1966-01-01), TAZI Hiba (1967-01-01), FASSI Meryem (1968-01-01), AMRANI Lina (1969-01-01)]
+Femme la plus agee : ALAMI Karima (1960-01-01)
+Epouses de SAFI Said (2000..2020) : [RAMI Salima (1961-01-01), ALI Amal (1962-01-01), ALAOUI Wafa (1963-01-01), HAMDI Hana (1964-01-01)]
+Requete native nommee enfants de RAMI Salima : 4
+Requete nommee femmes mariees >=2 fois : [ALAMI Karima (1960-01-01)]
+Criteria nombre hommes maries a 4 femmes (2000..2020) : 1
+Nom : SAFI Said — Mariages en cours :
+Femme : RAMI Salima Date debut : 1990-09-03 Date fin : null Nbr enfants : 4
+Femme : ALI Amal Date debut : 1995-09-03 Date fin : null Nbr enfants : 2
+Femme : ALAOUI Wafa Date debut : 2000-11-04 Date fin : null Nbr enfants : 3
+Femme : HAMDI Hana Date debut : 2005-01-01 Date fin : null Nbr enfants : 1
+Mariages echoues :
+Femme : ALAMI Karima Date debut : 1989-09-03 Date fin : 1990-09-03 Nbr enfants : 0
+VERIFICATION BASE : toutes les invariants metier sont satisfaits.
